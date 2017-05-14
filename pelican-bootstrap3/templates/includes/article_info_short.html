@@ -1,0 +1,2 @@
+                    {% if not category %}<a href="{{ SITEURL }}/{{ article.category.url }}"><i class="fa fa-folder-open"></i> {{ article.category | capitalize }}</a> <span class="separator">&middot;</span>{% endif %}
+                    <i class="fa fa-calendar"></i> <time datetime="{{ article.date.isoformat() }}">{{ article.date|strftime("%b %d, %Y") }}</time>
